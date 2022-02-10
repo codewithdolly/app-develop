@@ -2,8 +2,9 @@
   display: inline-block;
   margin: 10px 0;
   margin-right: 1rem;
-  width: 250px;
+  width: 230px;
   height: 120px;
+  padding: 0 10px;
 }
 
 .view {

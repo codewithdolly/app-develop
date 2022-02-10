@@ -17,27 +17,27 @@ const Features = () => {
             return (
               <>
                 <Card className="features--cards">
-                 <div style={{display:"flex", alignItems:"center"}}>
+                 <div style={{display:"flex", alignItems:"center",  justifyContent: "space-between"}}>
                  <CardContent>
                     <Typography
                       sx={{ fontSize: 20 }}
                       component="div"
                     >
-                     <b> Word of the Day</b>
+                     <b>{card.header}</b>
                     </Typography>
                     <Typography
                       sx={{ fontSize: 18 }}
                       component="div"
                     >
-                    Word of the Day
+                    {card.para}
                     </Typography>
                    
                   </CardContent>
                   <Avatar alt="Icon" src={icon} sx={{ width: 40, height: 40 }}/>
                  </div>
                  <div style={{display:"flex", justifyContent: "space-between", margin:"0 1rem"}}>
-                 <Typography color="GrayText">Race 7</Typography>
-                     <p>23 days</p>
+                 <Typography color="GrayText">Race {card.race}</Typography>
+                     <p>{card.day} days</p>
                  </div>
                  
                 </Card>
@@ -66,13 +66,13 @@ const featureDetails = [
     header: "Cox Plate",
     para: "Flemington",
     race: 7,
-    day: 3,
+    day: 23,
   },
   {
-    header: "Cox Plate",
-    para: "Flemington",
-    race: 7,
-    day: 3,
+    header: "the Golden Eagle",
+    para: "Randwick",
+    race: 8,
+    day: 165,
   },
   {
     header: "Cox Plate",
