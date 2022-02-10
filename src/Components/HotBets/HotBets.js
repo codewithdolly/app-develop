@@ -1,17 +1,14 @@
 import * as React from "react";
 import "./HotBets.css";
-import { useTheme } from "@mui/material/styles";
 import Box from "@mui/material/Box";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import { Avatar } from "@mui/material";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
-import ChevronRightIcon from '@mui/icons-material/ChevronRight';
+import ChevronRightIcon from "@mui/icons-material/ChevronRight";
 
 const HotBets = () => {
-  const theme = useTheme();
-
   return (
     <div className="hotBets">
       <h3>HOT Bets</h3>
@@ -29,10 +26,9 @@ const HotBets = () => {
                   <CardContent sx={{ flex: "1 0 auto" }}>
                     <Typography
                       component="div"
-                      variant="h6"
-                      sx={{ color: "black" }}
+                      sx={{ color: "black", fontSize: 20  }}
                     >
-                      {card.name}
+                      <b>{card.name}</b>
                     </Typography>
                     <div style={{ display: "flex" }}>
                       <Avatar
@@ -55,12 +51,20 @@ const HotBets = () => {
                 <Button variant="contained" className="btn btn2">
                   HOT Bet Now
                 </Button>
+                
               </div>
             </Card>
           </>
         );
       })}
-      <Button href="#text-buttons"className="btn view" endIcon={<ChevronRightIcon />}>View More</Button>
+      <Button
+        href="#text-buttons"
+        className="btn view"
+        endIcon={<ChevronRightIcon />}
+      >
+        View More
+      </Button>
+      <div className='break'></div>
     </div>
   );
 };
@@ -92,5 +96,4 @@ const betCards = [
     image: "../Images/rakesh.jfif",
     profit: 80,
   },
-
 ];

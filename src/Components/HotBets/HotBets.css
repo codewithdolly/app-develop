@@ -17,17 +17,19 @@
     border-radius: 30px !important;
     padding: 0 16px !important;
 }
-.view{
-    float: right;
-}
+
 
 .hotBets--cards--span{
     color: gray;
     margin-left: 2px;
 
 }
+.view{
+    float: right;
+    }
 .break{
     border-bottom: 1px solid rgba(128, 128, 128, 0.253);
-    margin:1rem 2rem;
-    margin-bottom: 4rem;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    color: rgba(0, 0, 0, 0.767) !important;
   }

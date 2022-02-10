@@ -1,0 +1,18 @@
+.features--cards {
+  display: inline-block;
+  margin: 10px 0;
+  margin-right: 1rem;
+  width: 250px;
+  height: 120px;
+}
+
+.view {
+    float: right;
+  }
+  .css-1e6y48t-MuiButtonBase-root-MuiButton-root, .break {
+    border-bottom: 1px solid rgba(128, 128, 128, 0.253);
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    color: rgba(0, 0, 0, 0.767) !important;
+  }
+  
