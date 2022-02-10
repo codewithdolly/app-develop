@@ -1,0 +1,18 @@
+
+.hotBets{
+    display: flex;
+    justify-content: space-around;
+    margin-right: 1rem;
+
+}
+
+.btn{
+    text-transform: capitalize !important;
+    font-size: 14px !important;
+}
+.btn2{
+    background-color: yellow !important;
+    color: black !important;
+    border-radius: 30px !important;
+    padding: 2px 16px !important;
+}
