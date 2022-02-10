@@ -1,15 +1,13 @@
 
 import './App.css';
-import { HotBets, Features } from './Components';
-import Card from "./Components/Cards/Cards"
+import { HotBets,Futures, Promotions } from './Components';
 
 function App() {
   return (
     <div className="app">
     <HotBets />
-    <Features />
-
-      <Card />
+    <Futures />
+    <Promotions />
     </div>
   );
 }

@@ -1,0 +1,18 @@
+
+
+
+.promotions--cards{
+    display: inline-block;
+    margin: 10px 0;
+    margin: 1.2rem;
+}
+.card-details{
+    padding: 10px 5px ;
+}
+
+
+.betNow{
+    color: white;
+    background-color: black !important;
+    opacity: 5;
+}
