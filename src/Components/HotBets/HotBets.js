@@ -7,9 +7,6 @@ import CardContent from "@mui/material/CardContent";
 import { Avatar } from "@mui/material";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
-import SkipPreviousIcon from "@mui/icons-material/SkipPrevious";
-import PlayArrowIcon from "@mui/icons-material/PlayArrow";
-import SkipNextIcon from "@mui/icons-material/SkipNext";
 import img1 from "../Images/rakesh.jfif";
 import icon1 from "../Images/icon1.png";
 
@@ -20,7 +17,7 @@ const HotBets = () => {
       <div className="hotBets">   
       {betCards.map((card)=>{
           return (<>
-            <Card sx={{ maxWidth: 250, p: 1 }}>
+            <Card sx={{ maxWidth: 225, p: 1 }} className="hotBets--cards">
       <div style={{ display: "flex" }}>
         <Avatar alt="Remy Sharp" src={img1} sx={{ width: 50, height: 50 }} />
         <Box sx={{ display: "flex", flexDirection: "column" }}>
@@ -29,7 +26,7 @@ const HotBets = () => {
               Luck Marlow
             </Typography>
             <div style={{ display: "flex" }}>
-              <Avatar src={icon1} variant="rounded" />
+              <Avatar src={icon1} variant="rounded"  sx={{ width: 24, height: 24 }} />
               <Typography variant="subtitle1" component="div">
                 108% PROFIT
               </Typography>
@@ -71,7 +68,5 @@ const betCards=[
     {
         name:"Luck Marlow",
     },
-    {
-        name:"Luck Marlow",
-    },
+
 ]

@@ -5,7 +5,7 @@ import Card from "./Components/Cards/Cards"
 
 function App() {
   return (
-    <div className="App">
+    <div className="app">
 
     <h3>HOT Bets</h3>
     <HotBets />

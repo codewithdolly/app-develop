@@ -1,8 +1,15 @@
-
 .hotBets{
-    display: flex;
-    justify-content: space-around;
-    margin-right: 1rem;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+}
+
+
+
+.hotBets--cards{
+    display: inline-block;
+    margin: 1rem;
+    width: 250px;
 
 }
 
@@ -14,5 +21,5 @@
     background-color: yellow !important;
     color: black !important;
     border-radius: 30px !important;
-    padding: 2px 16px !important;
+    padding: 0 16px !important;
 }
