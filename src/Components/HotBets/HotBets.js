@@ -7,28 +7,27 @@ import CardContent from "@mui/material/CardContent";
 import { Avatar } from "@mui/material";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
-import img1 from "../Images/rakesh.jfif";
-import icon1 from "../Images/icon1.png";
 
 const HotBets = () => {
   const theme = useTheme();
 
   return (
       <div className="hotBets">   
+         <h3>HOT Bets</h3>
       {betCards.map((card)=>{
           return (<>
-            <Card sx={{ maxWidth: 225, p: 1 }} className="hotBets--cards">
+            <Card sx={{ maxWidth: 230, p: 1 }} className="hotBets--cards">
       <div style={{ display: "flex" }}>
-        <Avatar alt="Remy Sharp" src={img1} sx={{ width: 50, height: 50 }} />
-        <Box sx={{ display: "flex", flexDirection: "column" }}>
+        <Avatar alt="Remy Sharp" src={process.env.PUBLIC_URL + card.image} sx={{ width: 50, height: 50 }} />
+        <Box sx={{ display: "flex"}}>
           <CardContent sx={{ flex: "1 0 auto" }}>
             <Typography component="div" variant="h6" sx={{ color: "black" }}>
-              Luck Marlow
+              {card.name}
             </Typography>
             <div style={{ display: "flex" }}>
-              <Avatar src={icon1} variant="rounded"  sx={{ width: 24, height: 24 }} />
+              <Avatar src={process.env.PUBLIC_URL + card.icon} variant="rounded"  sx={{ width: 24, height: 24 }} />
               <Typography variant="subtitle1" component="div">
-                108% PROFIT
+                {card.profit}% PROFIT
               </Typography>
             </div>
           </CardContent>
@@ -55,18 +54,53 @@ export default HotBets;
 const betCards=[
     {
         name:"Luck Marlow",
+        icon:"../Images/icon1.png",
+        image:"../Images/rakesh.jfif",
+        profit:108,
+
+    },
+    {
+        name:"The Sultan",
+        icon:"../Images/icon2.png",
+        image:"../Images/rakesh.jfif",
+        profit: 80,
     },
     {
         name:"Luck Marlow",
+        icon:"../Images/icon1.png",
+        image:"../Images/rakesh.jfif",
+        profit:108,
+
     },
     {
+        name:"The Sultan",
+        icon:"../Images/icon2.png",
+        image:"../Images/rakesh.jfif",
+        profit: 80,
+    },    {
         name:"Luck Marlow",
+        icon:"../Images/icon1.png",
+        image:"../Images/rakesh.jfif",
+        profit:108,
+
     },
     {
+        name:"The Sultan",
+        icon:"../Images/icon2.png",
+        image:"../Images/rakesh.jfif",
+        profit: 80,
+    },    {
         name:"Luck Marlow",
+        icon:"../Images/icon1.png",
+        image:"../Images/rakesh.jfif",
+        profit:108,
+
     },
     {
-        name:"Luck Marlow",
+        name:"The Sultan",
+        icon:"../Images/icon2.png",
+        image:"../Images/rakesh.jfif",
+        profit: 80,
     },
 
 ]
