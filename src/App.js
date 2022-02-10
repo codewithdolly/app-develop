@@ -8,6 +8,7 @@ function App() {
     <div className="app">
     <HotBets />
     <br />
+    <div className='break'></div>
       <Card />
     </div>
   );
